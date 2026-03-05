@@ -47,7 +47,7 @@
     box-shadow: 320px 0px 0px   rgb(61, 60, 58);
 }
   .photo-frame-box {
-    background-color: blue;
+    
     width: 110%;
     height: 290px;
     top: 210px;
@@ -57,7 +57,7 @@
 
 .box-cake{
 position: absolute;
-background-color: violet;
+
 left: 190px;
 bottom: 0px;
 height: 270px;
@@ -249,7 +249,7 @@ position: absolute;
 display: flex;
 right: 10px;
 top: 125px;
-background-color: yellowgreen;
+
 width: 100px;
 height: 165px;
 
