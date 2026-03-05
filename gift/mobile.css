@@ -1,0 +1,405 @@
+/* Estilos específicos para iPhone 14 Pro Max */
+@media only screen and (max-width: 430px) {
+
+  body {
+    height: auto;
+    background: radial-gradient(
+      circle at center,
+      rgb(248, 150, 170) 0%,
+      rgb(252, 170, 205) 18%,
+      rgb(253, 180, 215) 35%,
+      rgb(246, 170, 210) 52%,
+      rgb(242, 160, 205) 68%,
+      rgb(238, 145, 195) 85%,
+      rgb(232, 130, 185) 100%
+    );
+  }
+
+  .table {
+    width: 400px;
+    left: px; /* Ajusta al ancho de la pantalla */
+    top: 500px;
+    height: 40px;
+    z-index: 10px;
+  }
+.table::before{
+  content: " ";
+    background-color:  rgb(61, 60, 58);
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    left: 50px;
+    border-radius: 10px;
+}
+
+.table::after{
+  content: " ";
+    background-color:  rgb(61, 60, 58);
+    height: 300px;
+    width: 40px;
+    position: absolute;
+    left: 20px;
+    border-radius: 5px;
+    box-shadow: 320px 0px 0px   rgb(61, 60, 58);
+}
+  .photo-frame-box {
+    
+    width: 95%;
+    height: 290px;
+    top: 210px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+.box-cake{
+position: absolute;
+
+bottom: 0px;
+height: 270px;
+width: 155px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+
+}
+.cake{
+  background: linear-gradient(
+  to bottom,
+  rgb(255, 48, 138) 20%,
+  rgb(255, 126, 182) 20%,
+  rgb(255, 213, 179)20%,
+  rgb(255, 213, 179)35%,
+  rgb(125, 251, 255) 35%,
+  rgb(35, 223, 230) 43%,
+  rgb(255, 213, 179)43%,
+  rgb(255, 213, 179)51%,
+  rgb(125, 251, 255) 51%,
+  rgb(35, 223, 230) 59%,
+  rgb(255, 213, 179)59%,
+  rgb(255, 213, 179) 100%
+);
+  position: absolute;
+  overflow: hidden;
+  margin-top: 60px;
+  
+  width: 150px;
+  height: 120px;
+  top: 130px;
+  border-radius: 35px;
+  }
+.chocolate{
+     position: absolute;
+    background-color: rgb(255, 48, 138);
+    width: 12px;
+    height: 35px;
+    border-radius: 20px;
+    top: 2px;
+  }
+.chocolate::after{
+   content: "";
+    position: absolute;
+    background-color: rgb(255, 213, 179);
+    width: 12px;
+    height: 20px;
+    border-radius: 20px;
+    left: 12px;
+    top: 18px;
+    box-shadow:  
+    12px 0px 0px  rgb(255, 48, 138),
+     24px 0px 0px  rgb(255, 213, 179),
+      36px -5px 0px  rgb(255, 48, 138),
+       48px 0px 0px rgb(255, 213, 179) ,
+      60px 0px 0px  rgb(255, 48, 138),
+         72px 0px 0px  rgb(255, 213, 179) ,
+          84px -5px 0px rgb(255, 48, 138),
+           95px 0px 0px rgb(255, 213, 179),
+            107px 0px 0px rgb(255, 48, 138),
+             119px 0px 0px rgb(255, 213, 179),
+             130px -5px 0px rgb(255, 48, 138);
+  }
+
+.candle{
+position: absolute;
+top: 140px;
+width: 9px;
+height: 50px;
+border-radius: 2px;
+background: linear-gradient(
+  to bottom,
+  #fff3c4 0%,
+  #fff3c4 20%,
+  #ffc76b 20%,
+  #ffc76b 40%,
+  #fff3c4 40%,
+  #fff3c4 60%,
+  #ffc76b 60%,
+  #ffc76b 80%,
+  #fff3c4 80%,
+  #fff3c4 100%
+); }
+   
+.candle::after{
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 3px;
+    width: 2px;
+    height: 12px;
+    background-color: rgb(0, 0, 0);
+  }
+   
+
+.photo-frame{
+  position: relative;
+  background-color: rgb(175, 99, 37);
+  border: 2px solid rgb(131, 63, 0);
+  width: 58px;
+height: 70px;
+  left: -110px;
+  top: 55px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  
+}
+
+
+
+.photo-frame::after{
+  position: absolute;
+border-radius: 2px;
+
+border: 2px solid rgb(131, 63, 0);
+transform: translate(-50%, -50%) rotate(-45deg);
+content: "";
+position: absolute;
+width: 30px;
+height: 30px;
+background-color: rgb(175, 99, 37);
+top: 85px;
+left: calc( 50% - -0px);
+z-index: -5;
+}
+
+.photo-frame::before{
+background-color: rgb(175, 99, 37);
+content: "";
+width: 60px;
+height: 5px;
+position: absolute;
+top: 66px;
+
+}
+
+
+
+
+.candle-flame{
+
+  position: absolute;
+  background: radial-gradient(
+    ellipse at bottom,
+     rgba(255, 255, 180, 1) 0%,
+      rgba(255, 200, 0, 0.9) 50%,
+       rgba(255, 0, 0, 0.6) 80%,
+        transparent 00%);
+  width: 20px;
+  height: 30px;
+  top: 114px;
+  filter: blur(0.8px);
+  border-radius: 40px;
+  animation: candle-flame 0.15s alternate infinite ease-in-out;
+   z-index: 10000;
+}
+
+
+
+
+.happy{
+  
+    position: absolute;
+    top: 160px; /* Ajusta la distancia vertical desde la torta */
+    left: 10%;
+    width: 400px;
+    height: 100px;
+    transform: translateX(-50%);
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+    color: #ff4d6d; 
+    user-select: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+    animation: flotar 2s ease-in-out infinite,
+               brillo 1.5s infinite;
+}
+
+
+
+
+
+.gift-wrapper{
+position: absolute;
+display: flex;
+right: 20px;
+top: 125px;
+
+width: 100px;
+height: 165px;
+
+}
+.gift-lid{
+animation: cover 1.5s ease-in-out infinite;
+ position: absolute;
+  background: linear-gradient(
+    to right,
+    #efffee 37%,
+    #fe3f3f 37%,
+    #fe3f3f 63%,
+     #efffee 63%,
+     #efffee 100%);
+     box-shadow: 0px 3px 20px rgba(68, 68, 68, 0.884);
+  width: 72px;
+  height: 25px;
+  border-radius: 8px;
+  left: 4px;
+  top: 102px;
+ z-index: 2;
+ transform: scale(1.5) translateY(4px) 0.15s  ;
+}
+.gift-base{
+animation: base-box 1.5s ease-in-out infinite;
+  position: absolute;
+  background: linear-gradient(
+    to right,
+    #efffee 36%,
+    #fe3f3f 36%,
+    #fe3f3f 64%,
+     #efffee 64%,
+     #efffee 100%);
+  width: 60px;
+  height: 50px;
+  border-radius: 12px;
+  left: 10px;
+  top: 116px;
+  
+}
+.gift-ribbon{
+ animation: ribbon 1.5s ease-in-out infinite; 
+position: relative;
+
+display: flex;
+animation: cinta 1.5s ease-in-out infinite;
+bottom: -55px;
+left: 4px;
+height: 40px;
+width: 60px;
+
+}
+
+.ribbon-left{
+  position: absolute;
+  bottom: -19px;
+  left: 10px;
+width: 25px;
+border: 2px solid rgb(138, 0, 0);
+height: 20px;
+transform: rotate(35deg);
+border-radius: 8px 17px 4px 17px ;
+ background-color: #fe3f3f 
+}
+
+.ribbon-right{
+ background-color: #fe3f3f ;
+  position: absolute;
+ width: 25px;
+border: 2px solid rgb(138, 0, 0);
+height: 20px;
+right: -2px;
+border-radius: 17px 8px 17px 4px ;
+transform: rotate(-35deg);
+bottom: -19px;
+}
+
+.ribbon-center{
+position: absolute;
+  border-radius: 60px;
+  width: 30%;
+  height: 35%;
+  background-color: #fe3f3f ;
+  bottom: -15px;
+  left: 26px;
+  border: 2px solid rgb(138, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+.photo-frame2{
+  position: relative;
+  background-color: rgb(175, 99, 37);
+  border: 2px solid rgb(131, 63, 0);
+  width: 58px;
+height: 70px;
+  left: -170px;
+  top: 140px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  
+}
+
+
+
+.photo-frame2::after{
+  position: absolute;
+border-radius: 2px;
+
+border: 2px solid rgb(131, 63, 0);
+transform: translate(-50%, -50%) rotate(-45deg);
+content: "";
+position: absolute;
+width: 30px;
+height: 30px;
+background-color: rgb(175, 99, 37);
+top: 85px;
+left: calc( 50% - -0px);
+z-index: -5;
+}
+
+.photo-frame2::before{
+background-color: rgb(175, 99, 37);
+content: "";
+width: 60px;
+height: 5px;
+position: absolute;
+top: 66px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

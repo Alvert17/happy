@@ -24,20 +24,21 @@ body {
   
 }
 .table{
+  
 position: absolute;
 top: 100px;
     height: 35px;
     width: 790px;
     position: relative;
     border-radius: 8px;
-    background-color: rgb(61, 60, 58);
+    background-color: rgb(61, 58, 58);
     
 
 
 }
 .table::before{
   content: " ";
-    background-color: rgb(61, 60, 58);
+    background-color: rgb(61, 58, 58);
     height: 55px;
     width: 700px;
     position: absolute;
