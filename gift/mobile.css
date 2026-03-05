@@ -56,7 +56,7 @@
 .box-cake{
 position: absolute;
 background-color: blue;
-left: 146px;
+right: 120px;
 bottom: 0px;
 height: 270px;
 width: 135px;
@@ -157,10 +157,10 @@ background: linear-gradient(
   position: relative;
   background-color: rgb(175, 99, 37);
   border: 2px solid rgb(131, 63, 0);
-  width: 58px;
+  width: 50px;
 height: 70px;
-  left: -96px;
-  top: 55px;
+  left: -80px;
+  top: 58px;
   border-radius: 2px;
   display: flex;
   justify-content: center;
@@ -190,10 +190,10 @@ z-index: -5;
 .photo-frame::before{
 background-color: rgb(175, 99, 37);
 content: "";
-width: 60px;
+width: 51px;
 height: 5px;
 position: absolute;
-top: 66px;
+top: 65px;
 
 }
 
@@ -245,7 +245,7 @@ top: 66px;
 .gift-wrapper{
 position: absolute;
 display: flex;
-right: 5px;
+right: 0px;
 top: 125px;
 
 width: 100px;
@@ -350,10 +350,10 @@ position: absolute;
   position: relative;
   background-color: rgb(175, 99, 37);
   border: 2px solid rgb(131, 63, 0);
-  width: 58px;
+  width: 50px;
 height: 70px;
-  left: -160px;
-  top: 140px;
+  left: -135px;
+  top: 142px;
   border-radius: 2px;
   display: flex;
   justify-content: center;
@@ -383,7 +383,7 @@ z-index: -5;
 .photo-frame2::before{
 background-color: rgb(175, 99, 37);
 content: "";
-width: 60px;
+width: 52px;
 height: 5px;
 position: absolute;
 top: 66px;
