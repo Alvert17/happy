@@ -56,10 +56,10 @@
 .box-cake{
 position: absolute;
 background-color: blue;
-left: 120px;
+left: 146px;
 bottom: 0px;
 height: 270px;
-width: 155px;
+width: 135px;
 display: flex;
 justify-content: center;
 align-items: center;
