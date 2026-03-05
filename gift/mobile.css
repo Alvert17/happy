@@ -45,7 +45,7 @@
     box-shadow: 320px 0px 0px   rgb(61, 60, 58);
 }
   .photo-frame-box {
-  
+  background-color: aqua;
     width: 100%;
     height: 290px;
     top: 210px;
