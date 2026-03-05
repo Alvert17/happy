@@ -1,115 +1,121 @@
-/* Evitar resaltado azul en móviles */
-*{
--webkit-tap-highlight-color: transparent;
-outline: none;
-user-select: none;
+/*Evitamos el Resaltado Azul de los Moviles*/
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-/* Centrar todo el contenido */
-.container{
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-width:100%;
-}
-
-/* Mesa */
+/* MESA */
 .table{
-width:90%;
-max-width:360px;
-left:50%;
-transform:translateX(-50%);
+  width: 85%;
+  max-width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.table::before{
-width:80px;
-height:1000px;
-left:50%;
-transform:translateX(-50%);
+.table::before {
+  width: 90px;
+  height: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18px;
 }
 
-.table::after{
-width:80px;
-height:1000px;
-left:50%;
-transform:translateX(-50%);
+.table::after {
+  width: 85px;
+  height: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 18px;
 }
 
-/* Mensaje */
+/* MENSAJE */
 .happy{
-font-size:32px;
-text-align:center;
-left:50%;
-transform:translateX(-50%);
-width:90%;
+  position: absolute;
+  top: -95%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 90%;
+  font-size: 28px;
 }
 
-/* Fotos */
-.photo-frame{
-transform:scale(0.7);
-left:50%;
-transform-origin:center;
-translate:-50%;
-}
+/* OBJETOS DE LA MESA */
 
-.photo-frame2{
-transform:scale(0.7);
-left:50%;
-translate:-50%;
+/* Foto */
+.photo-frame {
+  left: 50%;
+  transform: translateX(-150%) scale(0.55);
+  bottom: -12px;
 }
 
 /* Pastel */
 .cake{
-transform:scale(0.7);
-left:50%;
-translate:-50%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.60);
+  bottom: -15px;
 }
 
 /* Regalo */
-.gift-wrapper{
-transform:scale(0.7);
-left:50%;
-translate:-50%;
+.caja {
+  left: 50%;
+  transform: translateX(50%) scale(0.55);
+  bottom: -18px;
 }
 
-/* Velas */
-.candle{
-transform:scale(0.7);
-left:50%;
-translate:-50%;
+/* Vela */
+.candle {
+  left: 50%;
+  transform: translateX(-50%) scale(0.6);
+  bottom: 70px;
 }
 
 .candle-flame{
-left:50%;
-translate:-50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 120px;
 }
 
 /* Carta */
-.carta{
-transform:scale(0.85);
-margin:auto;
-width:90%;
-max-width:350px;
-text-align:center;
+.carta {
+  animation: none;
+  transform: scale(0.8);
+  transform-origin: center center;
+  margin: 0 auto;
 }
 
 /* Pantallas pequeñas */
-@media (max-width:400px){
+@media only screen and (max-width: 400px) {
 
-.happy{
-font-size:26px;
-}
+  .happy{
+    font-size: 24px;
+  }
 
-.photo-frame,
-.photo-frame2,
-.cake,
-.gift-wrapper{
-transform:scale(0.6);
-}
+  .photo-frame {
+    transform: translateX(-155%) scale(0.5);
+  }
 
-.carta{
-transform:scale(0.75);
-}
+  .cake{
+    transform: translateX(-50%) scale(0.55);
+  }
 
+  .caja {
+    transform: translateX(55%) scale(0.5);
+  }
+
+  .candle {
+    transform: translateX(-50%) scale(0.55);
+    bottom: 60px;
+  }
+
+  .candle-flame{
+    bottom: 105px;
+  }
+
+  .carta {
+    transform: scale(0.7);
+  }
 }
