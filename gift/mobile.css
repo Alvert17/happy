@@ -1,125 +1,121 @@
-/*Evitamos el Resaltado Azul de los Moviles*/
+/* Evitar resaltado azul en móviles */
 * {
   -webkit-tap-highlight-color: transparent;
   outline: none;
-  user-select: none;         /* Evita seleccionar texto al tocar */
-  -webkit-user-select: none; /* Para Safari/iOS */
-  -moz-user-select: none;    /* Firefox */
-  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-/* Mesa */
+/* MESA */
 .table{
-  width: 370px;
-  left: -6px;
-}
-
-.table::before {
-  width: 100px;
-  height: 1000px;
+  width: 90%;
+  max-width: 340px;
   left: 50%;
   transform: translateX(-50%);
-  top: 18px;
+}
+
+/* patas de la mesa */
+.table::before {
+  width: 90px;
+  height: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
 }
 
 .table::after {
-  width: 95px;
-  height: 1000px;
-  left: 85px;
+  width: 85px;
+  height: 900px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
 }
 
-/*Mensaje*/
+/* MENSAJE */
 .happy{
-  top: -100%;
-  left: 120px;
+  top: -90%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 90%;
+  font-size: 32px;
 }
 
-/*Objetos de la mesa*/
+/* OBJETOS DE LA MESA */
+
+/* Foto */
 .photo-frame {
-  transform: scale(0.75);
-  left: 65px;
-  bottom: -12px;
+  transform: scale(0.7);
+  left: 50%;
+  transform: translateX(-140%) scale(0.7);
+  bottom: -15px;
 }
 
+/* Pastel */
 .cake{
-  transform: scale(0.75);
-  left: 15px;
+  transform: translateX(-50%) scale(0.75);
+  left: 50%;
   bottom: -20px;
 }
 
+/* Regalo */
 .caja {
-  transform: scale(0.75);
-  left: -65px;
-  bottom: -26px;
+  transform: translateX(40%) scale(0.7);
+  left: 50%;
+  bottom: -25px;
 }
 
+/* Vela */
 .candle {
-  transform: scale(0.75);
-  bottom: 94px;
-  left: 145px;
+  transform: translateX(-50%) scale(0.7);
+  bottom: 90px;
+  left: 50%;
 }
 
 .candle-flame{
-  bottom: 160px;
-  left: 142px;
+  transform: translateX(-50%);
+  bottom: 150px;
+  left: 50%;
 }
 
+/* Carta */
 .carta {
-  animation: none; /* Evitar mini zoom */
+  animation: none;
   transform: scale(0.8);
-  transform-origin: center center;
-  margin: 0 auto; /* Centrar horizontalmente */
+  transform-origin: center;
+  margin: 0 auto;
 }
 
-/* Nuevo media query para pantallas más pequeñas */
+
+/* TELÉFONOS MUY PEQUEÑOS */
 @media only screen and (max-width: 400px) {
 
-  .table{
-    width: 300px;
-  }
-
-  .table::after {
-    left: 45px;
-    top: 20px;
-  }
-
   .happy{
-    font-size: 36px;
-    top: -100%;
-    left: 130px; 
+    font-size: 26px;
   }
 
-  .photo-frame-box{
-    transform: scale(0.65);
-    left: 92px;
-    bottom: -16px;
+  .photo-frame {
+    transform: translateX(-145%) scale(0.6);
   }
 
   .cake{
-    transform: scale(0.63);
-    left: 17px;
-    bottom: -27px;
+    transform: translateX(-50%) scale(0.65);
   }
 
   .caja {
-    transform: scale(0.65);
-    left: -100px;
-    bottom: -35px;
+    transform: translateX(45%) scale(0.6);
   }
 
   .candle {
-    transform: scale(0.65);
-    bottom: 74px;
-    left: 160px;
+    transform: translateX(-50%) scale(0.6);
+    bottom: 75px;
   }
 
   .candle-flame{
-    bottom: 138px;
-    left: 157px;
+    bottom: 130px;
   }
 
   .carta {
     transform: scale(0.7);
   }
 }
-
