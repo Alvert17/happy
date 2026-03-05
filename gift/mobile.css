@@ -9,12 +9,12 @@
 }
 
 /* Mesa */
-.soporte {
+.table{
   width: 370px;
   left: -6px;
 }
 
-.soporte::before {
+.table::before {
   width: 100px;
   height: 1000px;
   left: 50%;
@@ -22,26 +22,26 @@
   top: 18px;
 }
 
-.soporte::after {
+.table::after {
   width: 95px;
   height: 1000px;
   left: 85px;
 }
 
 /*Mensaje*/
-.happy-birthday {
+.happy{
   top: -100%;
   left: 120px;
 }
 
 /*Objetos de la mesa*/
-.portaretrato {
+.photo-frame {
   transform: scale(0.75);
   left: 65px;
   bottom: -12px;
 }
 
-.torta {
+.cake{
   transform: scale(0.75);
   left: 15px;
   bottom: -20px;
@@ -53,13 +53,13 @@
   bottom: -26px;
 }
 
-.vela {
+.candle {
   transform: scale(0.75);
   bottom: 94px;
   left: 145px;
 }
 
-.llama {
+.candle-flame{
   bottom: 160px;
   left: 142px;
 }
@@ -74,28 +74,28 @@
 /* Nuevo media query para pantallas más pequeñas */
 @media only screen and (max-width: 400px) {
 
-  .soporte {
+  .table{
     width: 300px;
   }
 
-  .soporte::after {
+  .table::after {
     left: 45px;
     top: 20px;
   }
 
-  .happy-birthday {
+  .happy{
     font-size: 36px;
     top: -100%;
     left: 130px; 
   }
 
-  .portaretrato {
+  .photo-frame-box{
     transform: scale(0.65);
     left: 92px;
     bottom: -16px;
   }
 
-  .torta {
+  .cake{
     transform: scale(0.63);
     left: 17px;
     bottom: -27px;
@@ -107,13 +107,13 @@
     bottom: -35px;
   }
 
-  .vela {
+  .candle {
     transform: scale(0.65);
     bottom: 74px;
     left: 160px;
   }
 
-  .llama {
+  .candle-flame{
     bottom: 138px;
     left: 157px;
   }
