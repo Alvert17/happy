@@ -1,127 +1,111 @@
-/* Evitar resaltado azul */
+/* Evitar resaltado azul en móviles */
 *{
 -webkit-tap-highlight-color: transparent;
-outline:none;
-user-select:none;
+outline: none;
+user-select: none;
 }
 
-/* MENSAJE */
-.happy{
-position:absolute;
-top:60px;
-left:50%;
-transform:translateX(-50%);
-text-align:center;
-width:90%;
-font-size:26px;
+/* Centrar todo el contenido */
+.container{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+width:100%;
 }
 
-/* MESA */
-
+/* Mesa */
 .table{
-width:85%;
-max-width:300px;
-margin-top:160px;
+width:90%;
+max-width:360px;
 left:50%;
 transform:translateX(-50%);
 }
 
 .table::before{
-width:90%;
-height:25px;
+width:80px;
+height:1000px;
 left:50%;
 transform:translateX(-50%);
-top:0;
 }
 
 .table::after{
-width:35px;
-height:160px;
+width:80px;
+height:1000px;
 left:50%;
 transform:translateX(-50%);
-top:20px;
-box-shadow:none;
 }
 
-/* FOTO */
-
-.photo-frame{
+/* Mensaje */
+.happy{
+font-size:32px;
+text-align:center;
 left:50%;
-transform:translateX(-140%) scale(0.55);
-top:35px;
+transform:translateX(-50%);
+width:90%;
 }
 
-/* FOTO 2 */
+/* Fotos */
+.photo-frame{
+transform:scale(0.7);
+left:50%;
+transform-origin:center;
+translate:-50%;
+}
 
 .photo-frame2{
+transform:scale(0.7);
 left:50%;
-transform:translateX(-20%) scale(0.55);
-top:35px;
+translate:-50%;
 }
 
-/* PASTEL */
-
+/* Pastel */
 .cake{
+transform:scale(0.7);
 left:50%;
-transform:translateX(-50%) scale(0.60);
-top:70px;
+translate:-50%;
 }
 
-/* VELA */
-
-.candle{
+/* Regalo */
+.gift-wrapper{
+transform:scale(0.7);
 left:50%;
-transform:translateX(-50%) scale(0.60);
-top:10px;
+translate:-50%;
+}
+
+/* Velas */
+.candle{
+transform:scale(0.7);
+left:50%;
+translate:-50%;
 }
 
 .candle-flame{
 left:50%;
-transform:translateX(-50%);
-top:-20px;
+translate:-50%;
 }
 
-/* REGALO */
-
-.gift-wrapper{
-left:50%;
-transform:translateX(40%) scale(0.6);
-top:75px;
-}
-
-/* CARTA */
-
+/* Carta */
 .carta{
 transform:scale(0.85);
-margin:0 auto;
+margin:auto;
+width:90%;
+max-width:350px;
+text-align:center;
 }
 
 /* Pantallas pequeñas */
-
-@media only screen and (max-width:400px){
+@media (max-width:400px){
 
 .happy{
-font-size:22px;
+font-size:26px;
 }
 
-.photo-frame{
-transform:translateX(-145%) scale(0.5);
-}
-
-.photo-frame2{
-transform:translateX(-25%) scale(0.5);
-}
-
-.cake{
-transform:translateX(-50%) scale(0.55);
-}
-
+.photo-frame,
+.photo-frame2,
+.cake,
 .gift-wrapper{
-transform:translateX(40%) scale(0.55);
-}
-
-.candle{
-transform:translateX(-50%) scale(0.55);
+transform:scale(0.6);
 }
 
 .carta{
